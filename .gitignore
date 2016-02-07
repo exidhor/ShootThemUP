@@ -47,3 +47,5 @@ client/bin
 *.user
 *.log
 *.sln
+Debug
+Release
