@@ -203,10 +203,14 @@ void Map::ajoutLigne(float distanceSupplementaireParcouru)
 	for (intI i = 0; i < NBRE_ELEMENTS_LARGEUR; i++)
 	{
 		int randomInt = rand() % PROBA_ASTEROIDE;
+		float randomPos = rand() % 50 - 25;
 		if (randomInt == 1)
 		{ 
-			nouvelleLigne.push_back(new Decors(50, true, *m_animationsDecors[ElementDecors::ASTEROIDE],
-				sf::Vector2f(i * m_largeurFenetre / NBRE_ELEMENTS_LARGEUR + m_largeurFenetre / (2 * NBRE_ELEMENTS_LARGEUR),
+			nouvelleLigne.push_back(new Decors(
+				50,
+				true,
+				*m_animationsDecors[ElementDecors::ASTEROIDE],
+				sf::Vector2f(randomPos + i * m_largeurFenetre / NBRE_ELEMENTS_LARGEUR + m_largeurFenetre / (2 * NBRE_ELEMENTS_LARGEUR),
 				-m_hauteurFenetre / NBRE_ELEMENTS_HAUTEUR + distanceSupplementaireParcouru + m_hauteurFenetre / (2 * NBRE_ELEMENTS_HAUTEUR))));
 		}
 		else
@@ -214,8 +218,11 @@ void Map::ajoutLigne(float distanceSupplementaireParcouru)
 			randomInt = rand() % PROBA_SATELLITE;
 			if (randomInt == 1)
 			{
-				nouvelleLigne.push_back(new Decors(1, false, *m_animationsDecors[ElementDecors::SATELLITE],
-					sf::Vector2f(i * m_largeurFenetre / NBRE_ELEMENTS_LARGEUR + m_largeurFenetre / (2 * NBRE_ELEMENTS_LARGEUR),
+				nouvelleLigne.push_back(new Decors(
+					1, 
+					false, 
+					*m_animationsDecors[ElementDecors::SATELLITE],
+					sf::Vector2f(randomPos + i * m_largeurFenetre / NBRE_ELEMENTS_LARGEUR + m_largeurFenetre / (2 * NBRE_ELEMENTS_LARGEUR),
 					-m_hauteurFenetre / NBRE_ELEMENTS_HAUTEUR + distanceSupplementaireParcouru + m_hauteurFenetre / (2 * NBRE_ELEMENTS_HAUTEUR))));
 			}
 		}

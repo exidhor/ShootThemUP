@@ -10,13 +10,13 @@ TextureManager::TextureManager()
 	m_stateIndicateur = chargerTexturesStateIndicateur();
 
 	m_interface = new sf::Texture();
-	if (!m_interface->loadFromFile("interface_rogne.png"))
+	if (!m_interface->loadFromFile("img/interface_rogne.png"))
 	{
 
 	}
 
 	m_background = new sf::Texture();
-	if (!m_background->loadFromFile("background_extend_1200.png"))
+	if (!m_background->loadFromFile("img/background_extend_1200.png"))
 	{
 		
 	}
@@ -24,13 +24,13 @@ TextureManager::TextureManager()
 	m_background->setRepeated(true);
 
 	m_tir = new sf::Texture();
-	if (!m_tir->loadFromFile("tir3.png"))
+	if (!m_tir->loadFromFile("img/tir3.png"))
 	{
 		
 	}
 
 	sf::Texture* laser = new sf::Texture();
-	if (!laser->loadFromFile("laserLigne.png"))
+	if (!laser->loadFromFile("img/laserLigne.png"))
 	{
 
 	}
@@ -45,19 +45,19 @@ TextureManager::TextureManager()
 
 	//interface
 	m_aiguille = new sf::Texture();
-	if (!m_aiguille->loadFromFile("tableau_aiguille_rogne.png"))
+	if (!m_aiguille->loadFromFile("img/tableau_aiguille_rogne.png"))
 	{
 
 	}
 
 	m_indicateur = new sf::Texture();
-	if (!m_indicateur->loadFromFile("tableau_indicateurFull.png"))
+	if (!m_indicateur->loadFromFile("img/tableau_indicateurFull.png"))
 	{
 
 	}
 
 	m_barreDeProgression = new sf::Texture();
-	if (!m_barreDeProgression->loadFromFile("tableau_barreDeProgression.png"))
+	if (!m_barreDeProgression->loadFromFile("img/tableau_barreDeProgression.png"))
 	{
 
 	}
@@ -153,28 +153,28 @@ std::vector <sf::Texture*> TextureManager::chargerTexturesVaisseauJoueur()
 	std::vector <sf::Texture*> texturesVaisseauJoueur;
 
 	sf::Texture* vaisseauJoueur = new sf::Texture();
-	if (!vaisseauJoueur->loadFromFile("vaisseauJoueurTest.png"))
+	if (!vaisseauJoueur->loadFromFile("img/vaisseauJoueurTest.png"))
 	{
 	
 	}
 	texturesVaisseauJoueur.push_back(vaisseauJoueur);
 
 	sf::Texture* vaisseauJoueur2 = new sf::Texture();
-	if (!vaisseauJoueur2->loadFromFile("vaisseauJoueur2.png"))
+	if (!vaisseauJoueur2->loadFromFile("img/vaisseauJoueur2.png"))
 	{
 		
 	}
 	texturesVaisseauJoueur.push_back(vaisseauJoueur2);
 
 	sf::Texture* vaisseauJoueur3 = new sf::Texture();
-	if (!vaisseauJoueur3->loadFromFile("vaisseauJoueur3.png"))
+	if (!vaisseauJoueur3->loadFromFile("img/vaisseauJoueur3.png"))
 	{
 		
 	}
 	texturesVaisseauJoueur.push_back(vaisseauJoueur3);
 
 	sf::Texture* vaisseauJoueurSansFlamme = new sf::Texture();
-	if (!vaisseauJoueurSansFlamme->loadFromFile("vaisseauJoueurSansFlamme.png"))
+	if (!vaisseauJoueurSansFlamme->loadFromFile("img/vaisseauJoueurSansFlamme.png"))
 	{
 		
 	}
@@ -188,14 +188,14 @@ std::vector <sf::Texture*> TextureManager::chargerTexturesAsteroide()
 	std::vector <sf::Texture*> texturesAsteroide;
 
 	sf::Texture* asteroide = new sf::Texture();
-	if (!asteroide->loadFromFile("asteroide.png"))
+	if (!asteroide->loadFromFile("img/asteroide.png"))
 	{
 
 	}
 	texturesAsteroide.push_back(asteroide);
 
 	sf::Texture* asteroideBlanc = new sf::Texture();
-	if (!asteroideBlanc->loadFromFile("asteroideBlanc.png"))
+	if (!asteroideBlanc->loadFromFile("img/asteroideBlanc.png"))
 	{
 
 	}
@@ -209,35 +209,35 @@ std::vector <sf::Texture*> TextureManager::chargerTexturesSatellite()
 	std::vector <sf::Texture*> texturesSatellite;
 
 	sf::Texture* satellite = new sf::Texture();
-	if (!satellite->loadFromFile("satellite.png"))
+	if (!satellite->loadFromFile("img/satellite.png"))
 	{
 		
 	}
 	texturesSatellite.push_back(satellite);
 
 	sf::Texture* satellite2 = new sf::Texture();
-	if (!satellite2->loadFromFile("satellite2.png"))
+	if (!satellite2->loadFromFile("img/satellite2.png"))
 	{
 		
 	}
 	texturesSatellite.push_back(satellite2);
 
 	sf::Texture* satellite3 = new sf::Texture();
-	if (!satellite3->loadFromFile("satellite3.png"))
+	if (!satellite3->loadFromFile("img/satellite3.png"))
 	{
 		
 	}
 	texturesSatellite.push_back(satellite3);
 
 	sf::Texture* satellite4 = new sf::Texture();
-	if (!satellite4->loadFromFile("satellite4.png"))
+	if (!satellite4->loadFromFile("img/satellite4.png"))
 	{
 		
 	}
 	texturesSatellite.push_back(satellite4);
 
 	sf::Texture* satellite5 = new sf::Texture();
-	if (!satellite5->loadFromFile("satellite5.png"))
+	if (!satellite5->loadFromFile("img/satellite5.png"))
 	{
 		
 	}
@@ -251,7 +251,7 @@ std::vector <sf::Texture*> TextureManager::chargerTexturesBouclier()
 	std::vector <sf::Texture*> texturesBouclier;
 
 	sf::Texture* bouclier = new sf::Texture();
-	if (!bouclier->loadFromFile("vaisseauBouclier.png"))
+	if (!bouclier->loadFromFile("img/vaisseauBouclier.png"))
 	{
 
 	}
@@ -278,49 +278,49 @@ std::vector <sf::Texture*> TextureManager::chargerTexturesLed()
 	//BLANCHE = 0, BLEU, BLEU_FONCE, ROUGE, VERTE, JAUNE, ROSE
 
 	sf::Texture* led0 = new sf::Texture();
-	if (!led0->loadFromFile("tableau_led_blanche.png"))
+	if (!led0->loadFromFile("img/tableau_led_blanche.png"))
 	{
 
 	}
 	leds.push_back(led0);
 
 	sf::Texture* led = new sf::Texture();
-	if (!led->loadFromFile("tableau_led_bleu.png"))
+	if (!led->loadFromFile("img/tableau_led_bleu.png"))
 	{
 
 	}
 	leds.push_back(led);
 
 	sf::Texture* led2 = new sf::Texture();
-	if (!led2->loadFromFile("tableau_led_bleuFonce.png"))
+	if (!led2->loadFromFile("img/tableau_led_bleuFonce.png"))
 	{
 
 	}
 	leds.push_back(led2);
 
 	sf::Texture* led3 = new sf::Texture();
-	if (!led3->loadFromFile("tableau_led_rouge.png"))
+	if (!led3->loadFromFile("img/tableau_led_rouge.png"))
 	{
 
 	}
 	leds.push_back(led3);
 
 	sf::Texture* led4 = new sf::Texture();
-	if (!led4->loadFromFile("tableau_led_verte.png"))
+	if (!led4->loadFromFile("img/tableau_led_verte.png"))
 	{
 
 	}
 	leds.push_back(led4);
 
 	sf::Texture* led5 = new sf::Texture();
-	if (!led5->loadFromFile("tableau_led_jaune.png"))
+	if (!led5->loadFromFile("img/tableau_led_jaune.png"))
 	{
 
 	}
 	leds.push_back(led5);
 
 	sf::Texture* led6 = new sf::Texture();
-	if (!led6->loadFromFile("tableau_led_rose.png"))
+	if (!led6->loadFromFile("img/tableau_led_rose.png"))
 	{
 
 	}
@@ -354,21 +354,21 @@ std::vector <sf::Texture*> TextureManager::chargerTexturesStateIndicateur()
 	std::vector <sf::Texture*> stateIndicateurs;
 
 	sf::Texture* indicateur1 = new sf::Texture();
-	if (!indicateur1->loadFromFile("tableau_indicateur_loading.png"))
+	if (!indicateur1->loadFromFile("img/tableau_indicateur_loading.png"))
 	{
 
 	}
 	stateIndicateurs.push_back(indicateur1);
 
 	sf::Texture* indicateur2 = new sf::Texture();
-	if (!indicateur2->loadFromFile("tableau_indicateur_ready.png"))
+	if (!indicateur2->loadFromFile("img/tableau_indicateur_ready.png"))
 	{
 
 	}
 	stateIndicateurs.push_back(indicateur2);
 
 	sf::Texture* indicateur3 = new sf::Texture();
-	if (!indicateur3->loadFromFile("tableau_indicateur_onUse.png"))
+	if (!indicateur3->loadFromFile("img/tableau_indicateur_onUse.png"))
 	{
 
 	}

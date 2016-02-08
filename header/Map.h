@@ -12,7 +12,7 @@
 #include "Projectile.h"
 #include "Animation.h"
 
-#define NBRE_ELEMENTS_LARGEUR 5
+#define NBRE_ELEMENTS_LARGEUR 6
 #define NBRE_ELEMENTS_HAUTEUR 10
 #define PROBA_ASTEROIDE 7
 #define PROBA_SATELLITE 20
